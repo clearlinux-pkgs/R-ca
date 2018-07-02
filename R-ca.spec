@@ -4,7 +4,7 @@
 #
 Name     : R-ca
 Version  : 0.70
-Release  : 1
+Release  : 2
 URL      : https://cran.r-project.org/src/contrib/ca_0.70.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/ca_0.70.tar.gz
 Summary  : Simple, Multiple and Joint Correspondence Analysis
