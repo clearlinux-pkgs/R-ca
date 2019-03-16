@@ -4,7 +4,7 @@
 #
 Name     : R-ca
 Version  : 0.71
-Release  : 6
+Release  : 7
 URL      : https://cran.r-project.org/src/contrib/ca_0.71.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/ca_0.71.tar.gz
 Summary  : Simple, Multiple and Joint Correspondence Analysis
@@ -23,10 +23,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1550932631
+export SOURCE_DATE_EPOCH=1552724528
 
 %install
-export SOURCE_DATE_EPOCH=1550932631
+export SOURCE_DATE_EPOCH=1552724528
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -62,8 +62,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library ca|| : 
-cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
+R CMD check --no-manual --no-examples --no-codoc  ca || :
 
 
 %files
